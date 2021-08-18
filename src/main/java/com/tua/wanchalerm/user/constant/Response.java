@@ -6,7 +6,10 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum Response {
     SUCCESS("success"),
-    INVALID_REQUEST("invalid_request");
+    INVALID_REQUEST("invalid request"),
+    DATA_NOT_FOUND("Data not found"),
+    DUPLICATE("Duplicate"),
+    UNAUTHORIZED("Unauthorized");
 
     @Getter
     private final String code;

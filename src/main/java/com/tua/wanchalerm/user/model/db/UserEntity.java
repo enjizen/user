@@ -50,7 +50,7 @@ public class UserEntity implements Serializable {
     private String password;
 
     @Column(name = "is_active", nullable = false)
-    private boolean isActive;
+    private boolean active;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "userEntity", fetch = FetchType.LAZY)
     private List<DeviceEntity> deviceEntityList;

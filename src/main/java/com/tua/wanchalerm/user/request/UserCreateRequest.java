@@ -6,7 +6,7 @@ import lombok.Data;
 import javax.validation.constraints.Max;
 
 @Data
-public class UserTempCreateRequest {
+public class UserCreateRequest {
 
     @JsonProperty("first_name")
     private String firstName;

@@ -5,15 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-
 @Data
-public class GeneralResponse<T> implements Serializable {
-
-    @JsonProperty("code")
-    private String code;
-
-    @JsonProperty("data")
-    private T data;
-
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserCreateResponse {
+    @JsonProperty("key_confirm")
+    private String keyConfirm;
 }
